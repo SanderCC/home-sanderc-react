@@ -9,6 +9,8 @@ function App() {
                         <Body />
                         <Image />
                     </div>
+                    <hr />
+                    <p style={{margin: "20px auto", maxWidth: 500}}>Java, Spring, C#, ASP.NET, Blazor, JavaScript, TypeScript, ReactJS, PHP, Python, Kotlin, R, C</p>
                 </div>
             </header>
         </div>

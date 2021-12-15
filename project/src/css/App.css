@@ -29,15 +29,9 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  border: 1px solid #282c34;
 }
-
 
 .flexCards {
   display: flex;
