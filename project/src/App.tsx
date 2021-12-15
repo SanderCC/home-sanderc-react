@@ -25,7 +25,7 @@ function Body() {
 }
 
 function Languages() {
-    const languages = ["Java", "Spring", "C#", "ASP.NET", "Blazor", "JavaScript", "TypeScript", "ReactJS", "PHP", "Python", "Kotlin", "R", "C"]
+    const languages = ["Java", "JavaFX", "Spring", "C#", "ASP.NET", "Blazor", "JavaScript", "TypeScript", "ReactJS", "PHP", "Python", "Kotlin", "R", "C", "Docker", "Git", "SQL", "PL/SQL", "Bootstrap",]
     return <p style={{margin: "20px auto", maxWidth: 500}}>{languages.join(", ")}</p>
 }
 
