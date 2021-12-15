@@ -10,7 +10,7 @@ function App() {
                         <Image />
                     </div>
                     <hr />
-                    <p style={{margin: "20px auto", maxWidth: 500}}>Java, Spring, C#, ASP.NET, Blazor, JavaScript, TypeScript, ReactJS, PHP, Python, Kotlin, R, C</p>
+                    <Languages />
                 </div>
             </header>
         </div>
@@ -22,6 +22,11 @@ function Body() {
         <h1>SANDERC.NET</h1>
         <h3>Sander Constantin</h3>
     </div>
+}
+
+function Languages() {
+    const languages = ["Java", "Spring", "C#", "ASP.NET", "Blazor", "JavaScript", "TypeScript", "ReactJS", "PHP", "Python", "Kotlin", "R", "C"]
+    return <p style={{margin: "20px auto", maxWidth: 500}}>{languages.join(", ")}</p>
 }
 
 function Image() {
