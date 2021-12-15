@@ -18,7 +18,7 @@ function App() {
 }
 
 function Body() {
-    return <div>
+    return <div style={{paddingLeft: 30}}>
         <h1>SANDERC.NET</h1>
         <h3>Sander Constantin</h3>
     </div>
