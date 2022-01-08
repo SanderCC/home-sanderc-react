@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f632a6f-a04c-49c4-b814-8095bc113951" name="Changes" comment="a love for coding card" />
+    <list default="true" id="8f632a6f-a04c-49c4-b814-8095bc113951" name="Changes" comment="I should remove this file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +60,7 @@
       <workItem from="1640114175831" duration="44000" />
       <workItem from="1640535869977" duration="24000" />
       <workItem from="1641644366509" duration="1438000" />
+      <workItem from="1641649357774" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="New Home">
       <created>1639574801750</created>
@@ -113,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641645809335</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Angular">
+      <created>1641649422824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641649422824</updated>
+    </task>
+    <task id="LOCAL-00010" summary="I should remove this file">
+      <created>1641649436016</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641649436016</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +154,9 @@
     <MESSAGE value="Programming languages" />
     <MESSAGE value="few updates" />
     <MESSAGE value="a love for coding card" />
-    <option name="LAST_COMMIT_MESSAGE" value="a love for coding card" />
+    <MESSAGE value="Angular" />
+    <MESSAGE value="I should remove this file" />
+    <option name="LAST_COMMIT_MESSAGE" value="I should remove this file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

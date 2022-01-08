@@ -9,7 +9,9 @@ function App() {
                         <Body />
                         <Image />
                     </div>
-                    <Languages />
+                    <div style={{maxWidth: "90%", margin: "auto"}}>
+                        <Languages />
+                    </div>
                     <br/>
                 </div>
             </header>
