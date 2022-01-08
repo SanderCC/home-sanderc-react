@@ -5,12 +5,12 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <div style={{margin: 30, background: "#f6f6f6", color: "#282c34", borderRadius: 5}}>
-                    <div className={"flexCards"} style={{margin: 20}}>
+                    <div className={"flexCards centerCards"} style={{margin: 20}}>
                         <Body />
                         <Image />
                     </div>
-                    <hr />
                     <Languages />
+                    <br/>
                 </div>
             </header>
         </div>
@@ -18,21 +18,31 @@ function App() {
 }
 
 function Body() {
-    return <div style={{paddingLeft: 30}}>
+    return <div style={{margin: "auto", padding: 2, textAlign: "center"}}>
         <h1>SANDERC.NET</h1>
-        <h3>Sander Constantin</h3>
+        <h4>A <span style={{color: "red"}}>❤</span> for coding</h4>
     </div>
 }
 
 function Languages() {
-    const languages = ["Java", "JavaFX", "Spring", "C#", "ASP.NET", "Blazor", "JavaScript", "TypeScript", "ReactJS", "PHP", "Python", "Kotlin", "R", "C", "Docker", "Git", "SQL", "PL/SQL", "Bootstrap",]
-    return <p style={{margin: "20px auto", maxWidth: 500}}>{languages.join(", ")}</p>
+    const other = ["Kotlin", "R", "C", "PHP"]
+    const analysis = ["Python", "R"]
+    const html = ["HTML", "CSS", "SASS", "Bootstrap",]
+    const java = ["Java", "JavaFX", "Spring"]
+    const csharp = ["C#", "ASP.NET", "MVC", "API", "Blazor"]
+    const js = ["JavaScript", "npm", "TypeScript", "ReactJS"]
+    const sql = ["SQL", "PL/SQL"]
+    const management = ["Docker", "Git"]
+    const languages = [csharp, java, js, sql, html, analysis, management, other]
+    return <>{languages.map(a => (<div key={a[0]}>
+            <hr />
+            <p style={{margin: "5px"}}>{a.join(", ")}</p>
+        </div>
+    ))}</>
 }
 
 function Image() {
-    return <div style={{padding: 30, marginLeft: 20}}>
-        <img height={200} src={"./img/avatar.png"} alt={"me"} style={{borderRadius: 10, boxShadow: "3px 3px 3px rgb(0,0,0,0.2)"}} />
-    </div>
+    return <img height={200} src={"./img/avatar.png"} alt={"me"} style={{margin: "10px 30px", borderRadius: 10, boxShadow: "3px 3px 3px rgb(0,0,0,0.2)"}} />
 }
 
 export default App;

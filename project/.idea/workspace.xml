@@ -4,6 +4,7 @@
     <list default="true" id="8f632a6f-a04c-49c4-b814-8095bc113951" name="Changes" comment="few updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../forum-react/project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -54,7 +56,10 @@
       <workItem from="1639570655751" duration="3933000" />
       <workItem from="1639576262431" duration="62000" />
       <workItem from="1639576356058" duration="1000" />
-      <workItem from="1639580268441" duration="26000" />
+      <workItem from="1639580268441" duration="73000" />
+      <workItem from="1640114175831" duration="44000" />
+      <workItem from="1640535869977" duration="24000" />
+      <workItem from="1641644366509" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="New Home">
       <created>1639574801750</created>
@@ -98,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639576319148</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="few updates">
+      <created>1639580325481</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639580325481</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
