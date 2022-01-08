@@ -30,7 +30,7 @@ function Languages() {
     const html = ["HTML", "CSS", "SASS", "Bootstrap",]
     const java = ["Java", "JavaFX", "Spring"]
     const csharp = ["C#", "ASP.NET", "MVC", "API", "Blazor"]
-    const js = ["JavaScript", "npm", "TypeScript", "ReactJS"]
+    const js = ["JavaScript", "npm", "TypeScript", "ReactJS", "Angular"]
     const sql = ["SQL", "PL/SQL"]
     const management = ["Docker", "Git"]
     const languages = [csharp, java, js, sql, html, analysis, management, other]
