@@ -9,10 +9,10 @@ function App() {
                         <Body />
                         <Image />
                     </div>
-                    <div style={{maxWidth: "90%", margin: "auto"}}>
+                    {/*<div style={{maxWidth: "90%", margin: "auto"}}>
                         <Languages />
                     </div>
-                    <br/>
+                    <br/>*/}
                 </div>
             </header>
         </div>
