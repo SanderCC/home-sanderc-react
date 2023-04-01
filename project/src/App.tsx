@@ -26,7 +26,7 @@ function Body() {
     </div>
 }
 
-function Languages() {
+/*function Languages() {
     const other = ["Kotlin", "R", "C", "PHP"]
     const analysis = ["Python", "R"]
     const html = ["HTML", "CSS", "SASS", "Bootstrap",]
@@ -41,7 +41,7 @@ function Languages() {
             <p style={{margin: "5px"}}>{a.join(", ")}</p>
         </div>
     ))}</>
-}
+}*/
 
 function Image() {
     return <img height={200} src={"./img/avatar.png"} alt={"me"} style={{margin: "10px 30px", borderRadius: 10, boxShadow: "3px 3px 3px rgb(0,0,0,0.2)"}} />
