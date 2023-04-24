@@ -4,11 +4,11 @@ FROM node:16-alpine as build-stage
 WORKDIR /app
 
 # Install dependencies
-COPY ./project/package*.json ./
+COPY ./package*.json ./
 RUN npm install
 
 # Build
-COPY ./project .
+COPY . .
 RUN npm run build
 
 # -----------------------------------------------------------------------------
