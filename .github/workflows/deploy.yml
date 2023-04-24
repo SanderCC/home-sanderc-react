@@ -30,7 +30,7 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            ./dist/
+            ./
             captain-definition
           outPath: deploy.tar
 
