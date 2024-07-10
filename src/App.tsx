@@ -2,6 +2,7 @@ import React from 'react';
 import '@fontsource/inter';
 import {Box, Card, Stack} from "@mui/joy";
 import "./css/app.css"
+import SiteButton from "./components/SiteButton";
 
 function App() {
   return (
@@ -25,16 +26,15 @@ function App() {
                           "&hide_border=true"}
                             alt={"GitHub stats"}
                       />
-                      <Stack direction={"row"} spacing={3}>
-                          <div>
-                              O
-                          </div>
-                          <div>
-                              O
-                          </div>
-                          <div>
-                              O
-                          </div>
+                      <Stack direction={"row"} spacing={2}>
+                          <SiteButton
+                              size={30}
+                              icon={"https://github.githubassets.com/favicons/favicon.png"}
+                              url={"https://github.com/SanderCC"} />
+                          <SiteButton
+                              size={31}
+                              icon={"https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8"}
+                              url={"https://www.linkedin.com/in/sanderconstantin/"} />
                       </Stack>
                   </div>
               </Stack>
