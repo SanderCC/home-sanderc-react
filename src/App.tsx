@@ -1,6 +1,7 @@
 import React from 'react';
 import '@fontsource/inter';
-import {Box, Card, Stack, Typography} from "@mui/joy";
+import {Box, Card, Stack} from "@mui/joy";
+import "./css/app.css"
 
 function App() {
   return (
