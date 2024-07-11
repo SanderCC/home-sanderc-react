@@ -6,7 +6,7 @@ import GitHubStats from "./components/GitHubStats";
 import ProfileButtons from "./components/ProfileButtons";
 import "./css/app.css"
 
-function App() {
+export default function App() {
   return (
       <Box display={"flex"} justifyContent={"center"} alignItems={"center"} sx={{m:0,p:0, height: "95vh"}}>
           <Card>
@@ -25,5 +25,3 @@ function App() {
       </Box>
   );
 }
-
-export default App;
