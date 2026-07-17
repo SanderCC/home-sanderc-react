@@ -1,0 +1,102 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+:root {
+    --color-bg: #f6f5fb;
+    --color-bg-elevated: #ffffff;
+    --color-text: #2b2a3d;
+    --color-text-muted: #666479;
+    --color-border: rgba(43, 42, 61, 0.1);
+    --color-accent: #6a63f6;
+    --color-accent-2: #2f9aa0;
+    --color-accent-soft: rgba(106, 99, 246, 0.14);
+    --shadow-card: 0 1px 2px rgba(31, 34, 64, 0.06), 0 12px 24px -12px rgba(31, 34, 64, 0.16);
+
+    --earth-ocean: #baccd9;
+    --earth-land: #e7cd8f;
+    --earth-land-2: #8fbf9a;
+    --earth-glow: rgba(106, 99, 246, 0.45);
+    --color-header-bg: rgba(246, 245, 251, 0.82);
+
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    --color-bg: #12131f;
+    --color-bg-elevated: #1b1d2e;
+    --color-text: #e8e8f2;
+    --color-text-muted: #a3a1b8;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-accent: #8b85ff;
+    --color-accent-2: #5fd0da;
+    --color-accent-soft: rgba(139, 133, 255, 0.18);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 32px -16px rgba(0, 0, 0, 0.55);
+
+    --earth-ocean: #1f5f7a;
+    --earth-land: #d7c37a;
+    --earth-land-2: #4f8f63;
+    --earth-glow: rgba(139, 133, 255, 0.55);
+    --color-header-bg: rgba(18, 19, 31, 0.75);
+
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 0.5em;
+}
+
+p {
+    line-height: 1.65;
+    color: var(--color-text-muted);
+}
+
+a {
+    color: inherit;
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}

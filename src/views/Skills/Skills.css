@@ -1,0 +1,9 @@
+.favorites-list {
+    margin-bottom: 40px;
+}
+
+.chip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}

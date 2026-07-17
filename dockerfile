@@ -1,5 +1,5 @@
 # BUILD IMAGE
-FROM node:16-alpine as build-stage
+FROM node:20-alpine as build-stage
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ RUN npm run build
 FROM fitiavana07/nginx-react
 
 # Copy built files
-COPY --from=build-stage /app/build /usr/share/nginx/html
+COPY --from=build-stage /app/out /usr/share/nginx/html
 
 # 80 for HTTP
 EXPOSE 80

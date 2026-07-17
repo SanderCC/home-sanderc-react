@@ -9,7 +9,11 @@
 /coverage
 
 # production
-/build
+/out
+*.tsbuildinfo
+
+# next.js
+/.next/
 
 # misc
 .DS_Store
