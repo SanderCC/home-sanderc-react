@@ -25,6 +25,15 @@ export const experience: Record<Lang, ExperienceItem[]> = {
             ],
         },
         {
+            company: "Bel'Maison",
+            role: "Freelance Full Stack Developer",
+            period: "Ongoing",
+            bullets: [
+                "Built and maintain the Bel'Maison real estate platform and its internal integrations dashboard as an independent freelancer.",
+                "See the Portfolio page for links to the live project.",
+            ],
+        },
+        {
             company: "Xplore Group",
             role: "Full Stack Developer (Intern)",
             period: "Apr — Jun 2023",
@@ -67,6 +76,15 @@ export const experience: Record<Lang, ExperienceItem[]> = {
             ],
         },
         {
+            company: "Bel'Maison",
+            role: "Freelance Full Stack Developer",
+            period: "Lopend",
+            bullets: [
+                "Bouw en onderhoud van het Bel'Maison vastgoedplatform en het interne integratiedashboard, als zelfstandig freelancer.",
+                "Zie de Portfolio-pagina voor links naar het live project.",
+            ],
+        },
+        {
             company: "Xplore Group",
             role: "Full Stack Developer (Stagiair)",
             period: "apr — jun 2023",
@@ -106,6 +124,15 @@ export const experience: Record<Lang, ExperienceItem[]> = {
                 "Développement et maintenance de logiciels avec ASP.NET, WinForms et Vue.js.",
                 "Travail sur plusieurs projets, dont un CRM, un logiciel de facility management, un data warehouse et un logiciel de marchés publics.",
                 "Reconnu en interne comme AI Champion chez 3P, moteur de l'adoption du développement assisté par IA au sein des équipes.",
+            ],
+        },
+        {
+            company: "Bel'Maison",
+            role: "Développeur Full Stack indépendant",
+            period: "En cours",
+            bullets: [
+                "Développement et maintenance de la plateforme immobilière Bel'Maison et de son tableau de bord d'intégrations interne, en tant qu'indépendant.",
+                "Voir la page Portfolio pour les liens vers le projet en ligne.",
             ],
         },
         {
