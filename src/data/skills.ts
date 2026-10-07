@@ -16,19 +16,19 @@ const CLOUD_DEVOPS_ITEMS = [
 
 export const skillGroups: Record<Lang, SkillGroup[]> = {
     en: [
-        { category: "Frontend", items: ["React", "Vue", "Angular", "JavaScript / TypeScript"] },
+        { category: "Frontend", items: ["React", "Next.js", "Vue", "Angular", "JavaScript / TypeScript"] },
         { category: "Backend", items: ["C# / .NET", "Java / Spring", "Python", "PHP"] },
         { category: "Data & Messaging", items: ["SQL", "SQL Server", "MySQL", "MongoDB", "NoSQL", "RabbitMQ"] },
         { category: "Cloud & DevOps", items: CLOUD_DEVOPS_ITEMS },
     ],
     nl: [
-        { category: "Front-end", items: ["React", "Vue", "Angular", "JavaScript / TypeScript"] },
+        { category: "Front-end", items: ["React", "Next.js", "Vue", "Angular", "JavaScript / TypeScript"] },
         { category: "Back-end", items: ["C# / .NET", "Java / Spring", "Python", "PHP"] },
         { category: "Data & messaging", items: ["SQL", "SQL Server", "MySQL", "MongoDB", "NoSQL", "RabbitMQ"] },
         { category: "Cloud & DevOps", items: CLOUD_DEVOPS_ITEMS },
     ],
     fr: [
-        { category: "Front-end", items: ["React", "Vue", "Angular", "JavaScript / TypeScript"] },
+        { category: "Front-end", items: ["React", "Next.js", "Vue", "Angular", "JavaScript / TypeScript"] },
         { category: "Back-end", items: ["C# / .NET", "Java / Spring", "Python", "PHP"] },
         { category: "Données & messagerie", items: ["SQL", "SQL Server", "MySQL", "MongoDB", "NoSQL", "RabbitMQ"] },
         { category: "Cloud & DevOps", items: CLOUD_DEVOPS_ITEMS },
