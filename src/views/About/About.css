@@ -13,9 +13,9 @@
 
 .about-orb {
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 14%;
+    left: 16%;
+    right: 16%;
+    top: 8%;
     aspect-ratio: 1;
     border-radius: 50%;
     background: conic-gradient(from 90deg, var(--violet), var(--aqua), var(--amber), var(--violet));
@@ -43,12 +43,6 @@
     margin-top: 0;
 }
 
-.chip-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 1.4rem;
-}
 
 @media (min-width: 900px) {
     .about-grid {

@@ -21,7 +21,6 @@ export const experience: Record<Lang, ExperienceItem[]> = {
             bullets: [
                 "Building and maintaining software with ASP.NET, WinForms and Vue.js.",
                 "Working across several projects, including a CRM, facility software, a data warehouse and public procurement software.",
-                "Recognised internally as 3P's AI Champion, driving the adoption of AI-assisted development across teams.",
             ],
         },
         {
@@ -72,7 +71,6 @@ export const experience: Record<Lang, ExperienceItem[]> = {
             bullets: [
                 "Bouwen en onderhouden van software met ASP.NET, WinForms en Vue.js.",
                 "Werkzaam binnen verschillende projecten, waaronder een CRM, facility software, een datawarehouse en software voor overheidsopdrachten.",
-                "Intern erkend als AI Champion bij 3P, met een drijvende rol in de adoptie van AI-ondersteunde ontwikkeling binnen de teams.",
             ],
         },
         {
@@ -123,7 +121,6 @@ export const experience: Record<Lang, ExperienceItem[]> = {
             bullets: [
                 "Développement et maintenance de logiciels avec ASP.NET, WinForms et Vue.js.",
                 "Travail sur plusieurs projets, dont un CRM, un logiciel de facility management, un data warehouse et un logiciel de marchés publics.",
-                "Reconnu en interne comme AI Champion chez 3P, moteur de l'adoption du développement assisté par IA au sein des équipes.",
             ],
         },
         {

@@ -42,3 +42,14 @@
         transform: translateY(10px) scale(0.95);
     }
 }
+
+.chip-list,
+.chip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip-list {
+    margin-top: 1.4rem;
+}

@@ -38,9 +38,10 @@
 }
 
 .hero-orb {
-    left: 8%;
-    right: 8%;
-    top: 12%;
+    /* must end above where the portrait starts fading (see e2e-demo/portrait.spec.ts) */
+    left: 15%;
+    right: 15%;
+    top: 6%;
     aspect-ratio: 1;
     z-index: 0;
 }
