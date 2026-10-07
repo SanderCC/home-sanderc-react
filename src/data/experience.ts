@@ -26,7 +26,7 @@ export const experience: Record<Lang, ExperienceItem[]> = {
         },
         {
             company: "Bel'Maison",
-            role: "Full Stack Developer (Volunteer)",
+            role: "Full Stack Developer",
             period: "2025 — 2026",
             bullets: [
                 "Built and maintain the Bel'Maison real estate platform and its internal integrations dashboard, unpaid, as a favour for a friend.",
@@ -77,7 +77,7 @@ export const experience: Record<Lang, ExperienceItem[]> = {
         },
         {
             company: "Bel'Maison",
-            role: "Full Stack Developer (Vrijwilliger)",
+            role: "Full Stack Developer",
             period: "2025 — 2026",
             bullets: [
                 "Bouw en onderhoud van het Bel'Maison vastgoedplatform en het interne integratiedashboard, onbetaald, als vriendendienst.",
@@ -128,7 +128,7 @@ export const experience: Record<Lang, ExperienceItem[]> = {
         },
         {
             company: "Bel'Maison",
-            role: "Développeur Full Stack (Bénévole)",
+            role: "Développeur Full Stack",
             period: "2025 — 2026",
             bullets: [
                 "Développement et maintenance de la plateforme immobilière Bel'Maison et de son tableau de bord d'intégrations interne, à titre gratuit, comme un service rendu à un ami.",
