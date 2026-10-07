@@ -26,10 +26,10 @@ export const experience: Record<Lang, ExperienceItem[]> = {
         },
         {
             company: "Bel'Maison",
-            role: "Freelance Full Stack Developer",
+            role: "Full Stack Developer (Volunteer)",
             period: "Ongoing",
             bullets: [
-                "Built and maintain the Bel'Maison real estate platform and its internal integrations dashboard as an independent freelancer.",
+                "Built and maintain the Bel'Maison real estate platform and its internal integrations dashboard, unpaid, as a favour for a friend.",
                 "See the Portfolio page for links to the live project.",
             ],
         },
@@ -77,10 +77,10 @@ export const experience: Record<Lang, ExperienceItem[]> = {
         },
         {
             company: "Bel'Maison",
-            role: "Freelance Full Stack Developer",
+            role: "Full Stack Developer (Vrijwilliger)",
             period: "Lopend",
             bullets: [
-                "Bouw en onderhoud van het Bel'Maison vastgoedplatform en het interne integratiedashboard, als zelfstandig freelancer.",
+                "Bouw en onderhoud van het Bel'Maison vastgoedplatform en het interne integratiedashboard, onbetaald, als vriendendienst.",
                 "Zie de Portfolio-pagina voor links naar het live project.",
             ],
         },
@@ -128,10 +128,10 @@ export const experience: Record<Lang, ExperienceItem[]> = {
         },
         {
             company: "Bel'Maison",
-            role: "Développeur Full Stack indépendant",
+            role: "Développeur Full Stack (Bénévole)",
             period: "En cours",
             bullets: [
-                "Développement et maintenance de la plateforme immobilière Bel'Maison et de son tableau de bord d'intégrations interne, en tant qu'indépendant.",
+                "Développement et maintenance de la plateforme immobilière Bel'Maison et de son tableau de bord d'intégrations interne, à titre gratuit, comme un service rendu à un ami.",
                 "Voir la page Portfolio pour les liens vers le projet en ligne.",
             ],
         },
