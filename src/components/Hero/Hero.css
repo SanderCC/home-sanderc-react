@@ -1,5 +1,6 @@
+/* rotating rings have a larger bounding box than the stage: clip them on narrow screens */
 .hero {
-    overflow-x: clip; /* rotating rings have a larger bounding box than the stage */
+    overflow-x: clip;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "name" "stage" "copy";
@@ -105,15 +106,13 @@
 .hero-photo {
     width: 100%;
     transform-origin: 50% 90%;
-    filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.35));
     animation: photo-in 900ms var(--ease-out) 250ms backwards;
 }
 
 @keyframes photo-in {
     from {
         opacity: 0;
-        transform: translateY(40px) scale(0.94);
-        filter: blur(8px);
+        transform: translateY(32px);
     }
 }
 
@@ -141,7 +140,7 @@
     top: 22%;
 }
 .f2 {
-    right: -2%;
+    right: 0;
     top: 36%;
 }
 .f3 {
@@ -149,7 +148,7 @@
     bottom: 22%;
 }
 .f4 {
-    right: 4%;
+    right: 6%;
     top: 8%;
 }
 
@@ -227,6 +226,7 @@
 /* ---------- desktop ---------- */
 @media (min-width: 900px) {
     .hero {
+        overflow-x: visible;
         grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
         grid-template-areas: "name stage" "copy stage";
         grid-template-rows: auto 1fr;

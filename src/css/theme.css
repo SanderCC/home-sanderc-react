@@ -226,7 +226,6 @@ select {
 @keyframes page-enter {
     from {
         opacity: 0;
-        filter: blur(8px);
         transform: translateY(12px);
     }
 }

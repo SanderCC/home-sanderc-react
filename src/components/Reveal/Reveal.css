@@ -1,19 +1,16 @@
 .reveal {
     opacity: 0;
     transform: translateY(22px) scale(0.985);
-    filter: blur(6px);
-    transition: opacity 600ms var(--ease-out), transform 700ms var(--ease-out), filter 600ms var(--ease-out);
+    transition: opacity 600ms var(--ease-out), transform 700ms var(--ease-out);
 }
 
 .reveal-visible {
     opacity: 1;
     transform: none;
-    filter: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
     .reveal {
         transform: none;
-        filter: none;
     }
 }
