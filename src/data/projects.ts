@@ -28,7 +28,7 @@ export const projects: Record<Lang, Project[]> = {
         {
             name: "Bel'Maison",
             url: "https://belmaison-seo.sanderc.net/en",
-            linkLabel: "belmaison.immo",
+            linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "A French real estate platform for buying and selling residential and commercial property with confidence.",
             tags: ["React", "Real Estate"],
@@ -84,7 +84,7 @@ export const projects: Record<Lang, Project[]> = {
         {
             name: "Bel'Maison",
             url: "https://belmaison-seo.sanderc.net/en",
-            linkLabel: "belmaison.immo",
+            linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Een Frans vastgoedplatform om met vertrouwen woningen en commercieel vastgoed te kopen en verkopen.",
             tags: ["React", "Vastgoed"],
@@ -141,7 +141,7 @@ export const projects: Record<Lang, Project[]> = {
         {
             name: "Bel'Maison",
             url: "https://belmaison-seo.sanderc.net/en",
-            linkLabel: "belmaison.immo",
+            linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Une plateforme immobilière française pour acheter et vendre en toute confiance biens résidentiels et commerciaux.",
             tags: ["React", "Immobilier"],
