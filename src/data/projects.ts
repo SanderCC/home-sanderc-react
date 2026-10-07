@@ -39,7 +39,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "wmtentservice.sanderc.net",
             description:
                 "A monitoring dashboard that keeps an eye on the heating devices of W&M Tent Service.",
-            tags: ["IoT", "Monitoring", "PWA"],
+            tags: ["IoT", "Monitoring", "Forecasting", "PWA"],
         },
         {
             name: "HaspelPlanner",
@@ -95,7 +95,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "wmtentservice.sanderc.net",
             description:
                 "Een monitoringdashboard dat de verwarmingstoestellen van W&M Tent Service in de gaten houdt.",
-            tags: ["IoT", "Monitoring", "PWA"],
+            tags: ["IoT", "Monitoring", "Voorspelling", "PWA"],
         },
         {
             name: "HaspelPlanner",
@@ -152,7 +152,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "wmtentservice.sanderc.net",
             description:
                 "Un tableau de bord de suivi qui surveille les appareils de chauffage de W&M Tent Service.",
-            tags: ["IoT", "Suivi", "PWA"],
+            tags: ["IoT", "Suivi", "Prévisions", "PWA"],
         },
         {
             name: "HaspelPlanner",
