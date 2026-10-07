@@ -48,7 +48,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "A French real estate platform for buying and selling residential and commercial property with confidence.",
-            tags: ["Real Estate", "Website", "SEO"],
+            tags: ["Real Estate", "Website", "SEO", "Emails", "Statistics"],
         },
         {
             name: "Bel'Maison Integrations",
@@ -105,7 +105,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Een Frans vastgoedplatform om met vertrouwen woningen en commercieel vastgoed te kopen en verkopen.",
-            tags: ["Vastgoed", "Website", "SEO"],
+            tags: ["Vastgoed", "Website", "SEO", "Mails", "Statistieken"],
         },
         {
             name: "Bel'Maison Integraties",
@@ -161,7 +161,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Une plateforme immobilière française pour acheter et vendre en toute confiance biens résidentiels et commerciaux.",
-            tags: ["Immobilier", "Site web", "SEO"],
+            tags: ["Immobilier", "Site web", "SEO", "E-mails", "Statistiques"],
         },
         {
             name: "Intégrations Bel'Maison",
