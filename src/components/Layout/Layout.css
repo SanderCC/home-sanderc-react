@@ -283,7 +283,7 @@
 }
 
 /* ---------- desktop ---------- */
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     .site-header {
         padding-inline: 24px;
     }
