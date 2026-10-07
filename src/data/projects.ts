@@ -11,6 +11,46 @@ export interface Project {
 export const projects: Record<Lang, Project[]> = {
     en: [
         {
+            name: "KBFKB",
+            url: "https://kbfkb.be",
+            linkLabel: "kbfkb.be",
+            description:
+                "The official website of the Royal Billiards Federation Klein-Brabant, with clubs, calendar, results and rankings.",
+            tags: ["Billiards", "Rankings", "Website"],
+        },
+        {
+            name: "HaspelPlanner",
+            url: "https://haspelplanner.sanderc.net",
+            linkLabel: "haspelplanner.sanderc.net",
+            description:
+                "Plan customer visits, calculate the best route and register sales on the road.",
+            tags: ["Route planning", "Field sales", "PWA"],
+        },
+        {
+            name: "W&M Tent Service",
+            url: "https://wmtentservice.sanderc.net",
+            linkLabel: "wmtentservice.sanderc.net",
+            description:
+                "A monitoring dashboard that keeps an eye on the heating devices of W&M Tent Service.",
+            tags: ["IoT", "Monitoring", "Forecasting", "PWA"],
+        },
+        {
+            name: "SupportersClub.net",
+            url: "https://supportersclub.net",
+            linkLabel: "supportersclub.net",
+            description:
+                "A platform to find and join a supporters club, get tickets and share events with all members.",
+            tags: ["Ticketing", "Ticket sales", "Community"],
+        },
+        {
+            name: "Bel'Maison",
+            url: "https://belmaison-seo.sanderc.net/en",
+            linkLabel: "belmaison-seo.sanderc.net",
+            description:
+                "A French real estate platform for buying and selling residential and commercial property with confidence.",
+            tags: ["Real Estate", "Website", "SEO"],
+        },
+        {
             name: "CITRadio DJ Platform",
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
@@ -25,48 +65,48 @@ export const projects: Record<Lang, Project[]> = {
             description: "An internal integrations dashboard supporting the Bel'Maison real estate platform.",
             tags: ["Real Estate", "Integrations", "Dashboard", "BackOffice"],
         },
+    ],
+    nl: [
         {
-            name: "Bel'Maison",
-            url: "https://belmaison-seo.sanderc.net/en",
-            linkLabel: "belmaison-seo.sanderc.net",
+            name: "KBFKB",
+            url: "https://kbfkb.be",
+            linkLabel: "kbfkb.be",
             description:
-                "A French real estate platform for buying and selling residential and commercial property with confidence.",
-            tags: ["Real Estate", "Website", "SEO"],
-        },
-        {
-            name: "W&M Tent Service",
-            url: "https://wmtentservice.sanderc.net",
-            linkLabel: "wmtentservice.sanderc.net",
-            description:
-                "A monitoring dashboard that keeps an eye on the heating devices of W&M Tent Service.",
-            tags: ["IoT", "Monitoring", "Forecasting", "PWA"],
+                "De officiële website van de Koninklijke Biljartfederatie Klein-Brabant, met clubs, kalender, uitslagen en rangschikking.",
+            tags: ["Biljart", "Rangschikking", "Website"],
         },
         {
             name: "HaspelPlanner",
             url: "https://haspelplanner.sanderc.net",
             linkLabel: "haspelplanner.sanderc.net",
             description:
-                "Plan customer visits, calculate the best route and register sales on the road.",
-            tags: ["Route planning", "Field sales", "PWA"],
+                "Plan je klantbezoeken, bereken de beste route en registreer je verkoop onderweg.",
+            tags: ["Routeplanning", "Buitendienst", "PWA"],
+        },
+        {
+            name: "W&M Tent Service",
+            url: "https://wmtentservice.sanderc.net",
+            linkLabel: "wmtentservice.sanderc.net",
+            description:
+                "Een monitoringdashboard dat de verwarmingstoestellen van W&M Tent Service in de gaten houdt.",
+            tags: ["IoT", "Monitoring", "Voorspelling", "PWA"],
         },
         {
             name: "SupportersClub.net",
             url: "https://supportersclub.net",
             linkLabel: "supportersclub.net",
             description:
-                "A platform to find and join a supporters club, get tickets and share events with all members.",
-            tags: ["Ticketing", "Ticket sales", "Community"],
+                "Een platform om een supportersclub te vinden en lid te worden, tickets te bestellen en evenementen met alle leden te delen.",
+            tags: ["Ticketing", "Ticketverkoop", "Community"],
         },
         {
-            name: "KBFKB",
-            url: "https://kbfkb.be",
-            linkLabel: "kbfkb.be",
+            name: "Bel'Maison",
+            url: "https://belmaison-seo.sanderc.net/en",
+            linkLabel: "belmaison-seo.sanderc.net",
             description:
-                "The official website of the Royal Billiards Federation Klein-Brabant, with clubs, calendar, results and rankings.",
-            tags: ["Billiards", "Rankings", "Website"],
+                "Een Frans vastgoedplatform om met vertrouwen woningen en commercieel vastgoed te kopen en verkopen.",
+            tags: ["Vastgoed", "Website", "SEO"],
         },
-    ],
-    nl: [
         {
             name: "CITRadio DJ-platform",
             url: "https://dj.citradio.net",
@@ -81,48 +121,48 @@ export const projects: Record<Lang, Project[]> = {
             description: "Een intern integratiedashboard ter ondersteuning van het Bel'Maison vastgoedplatform.",
             tags: ["Vastgoed", "Integraties", "Dashboard", "BackOffice"],
         },
+    ],
+    fr: [
         {
-            name: "Bel'Maison",
-            url: "https://belmaison-seo.sanderc.net/en",
-            linkLabel: "belmaison-seo.sanderc.net",
+            name: "KBFKB",
+            url: "https://kbfkb.be",
+            linkLabel: "kbfkb.be",
             description:
-                "Een Frans vastgoedplatform om met vertrouwen woningen en commercieel vastgoed te kopen en verkopen.",
-            tags: ["Vastgoed", "Website", "SEO"],
-        },
-        {
-            name: "W&M Tent Service",
-            url: "https://wmtentservice.sanderc.net",
-            linkLabel: "wmtentservice.sanderc.net",
-            description:
-                "Een monitoringdashboard dat de verwarmingstoestellen van W&M Tent Service in de gaten houdt.",
-            tags: ["IoT", "Monitoring", "Voorspelling", "PWA"],
+                "Le site officiel de la Fédération Royale de Billard Klein-Brabant, avec clubs, calendrier, résultats et classement.",
+            tags: ["Billard", "Classement", "Site web"],
         },
         {
             name: "HaspelPlanner",
             url: "https://haspelplanner.sanderc.net",
             linkLabel: "haspelplanner.sanderc.net",
             description:
-                "Plan je klantbezoeken, bereken de beste route en registreer je verkoop onderweg.",
-            tags: ["Routeplanning", "Buitendienst", "PWA"],
+                "Planifiez vos visites clients, calculez le meilleur itinéraire et enregistrez vos ventes en déplacement.",
+            tags: ["Itinéraires", "Ventes terrain", "PWA"],
+        },
+        {
+            name: "W&M Tent Service",
+            url: "https://wmtentservice.sanderc.net",
+            linkLabel: "wmtentservice.sanderc.net",
+            description:
+                "Un tableau de bord de suivi qui surveille les appareils de chauffage de W&M Tent Service.",
+            tags: ["IoT", "Suivi", "Prévisions", "PWA"],
         },
         {
             name: "SupportersClub.net",
             url: "https://supportersclub.net",
             linkLabel: "supportersclub.net",
             description:
-                "Een platform om een supportersclub te vinden en lid te worden, tickets te bestellen en evenementen met alle leden te delen.",
-            tags: ["Ticketing", "Ticketverkoop", "Community"],
+                "Une plateforme pour trouver et rejoindre un club de supporters, obtenir des billets et partager des événements avec tous les membres.",
+            tags: ["Billetterie", "Vente de billets", "Communauté"],
         },
         {
-            name: "KBFKB",
-            url: "https://kbfkb.be",
-            linkLabel: "kbfkb.be",
+            name: "Bel'Maison",
+            url: "https://belmaison-seo.sanderc.net/en",
+            linkLabel: "belmaison-seo.sanderc.net",
             description:
-                "De officiële website van de Koninklijke Biljartfederatie Klein-Brabant, met clubs, kalender, uitslagen en rangschikking.",
-            tags: ["Biljart", "Rangschikking", "Website"],
+                "Une plateforme immobilière française pour acheter et vendre en toute confiance biens résidentiels et commerciaux.",
+            tags: ["Immobilier", "Site web", "SEO"],
         },
-    ],
-    fr: [
         {
             name: "Plateforme DJ CITRadio",
             url: "https://dj.citradio.net",
@@ -137,46 +177,6 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison.sanderc.net",
             description: "Un tableau de bord d'intégrations interne au service de la plateforme immobilière Bel'Maison.",
             tags: ["Immobilier", "Intégrations", "Tableau de bord", "BackOffice"],
-        },
-        {
-            name: "Bel'Maison",
-            url: "https://belmaison-seo.sanderc.net/en",
-            linkLabel: "belmaison-seo.sanderc.net",
-            description:
-                "Une plateforme immobilière française pour acheter et vendre en toute confiance biens résidentiels et commerciaux.",
-            tags: ["Immobilier", "Site web", "SEO"],
-        },
-        {
-            name: "W&M Tent Service",
-            url: "https://wmtentservice.sanderc.net",
-            linkLabel: "wmtentservice.sanderc.net",
-            description:
-                "Un tableau de bord de suivi qui surveille les appareils de chauffage de W&M Tent Service.",
-            tags: ["IoT", "Suivi", "Prévisions", "PWA"],
-        },
-        {
-            name: "HaspelPlanner",
-            url: "https://haspelplanner.sanderc.net",
-            linkLabel: "haspelplanner.sanderc.net",
-            description:
-                "Planifiez vos visites clients, calculez le meilleur itinéraire et enregistrez vos ventes en déplacement.",
-            tags: ["Itinéraires", "Ventes terrain", "PWA"],
-        },
-        {
-            name: "SupportersClub.net",
-            url: "https://supportersclub.net",
-            linkLabel: "supportersclub.net",
-            description:
-                "Une plateforme pour trouver et rejoindre un club de supporters, obtenir des billets et partager des événements avec tous les membres.",
-            tags: ["Billetterie", "Vente de billets", "Communauté"],
-        },
-        {
-            name: "KBFKB",
-            url: "https://kbfkb.be",
-            linkLabel: "kbfkb.be",
-            description:
-                "Le site officiel de la Fédération Royale de Billard Klein-Brabant, avec clubs, calendrier, résultats et classement.",
-            tags: ["Billard", "Classement", "Site web"],
         },
     ],
 };
