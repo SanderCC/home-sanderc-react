@@ -244,9 +244,11 @@
 }
 
 /* ---------- footer ---------- */
+/* One spacing unit drives the whole footer so the rhythm stays even. */
 .site-footer {
+    --foot-gap: clamp(1.5rem, 4vw, 2.5rem);
     margin-top: clamp(5rem, 14vw, 9rem);
-    padding: clamp(3rem, 8vw, 5rem) 0 calc(var(--safe-bottom) + 28px);
+    padding: calc(var(--foot-gap) * 1.5) 0 calc(var(--safe-bottom) + var(--foot-gap));
     border-top: 1px solid var(--line);
     background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--bg-2) 70%, transparent));
 }
@@ -255,15 +257,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.75rem;
-    padding-bottom: clamp(2.5rem, 7vw, 4rem);
+    gap: var(--foot-gap);
+    padding-bottom: var(--foot-gap);
 }
 
 .footer-cta-link {
     text-decoration: none;
     font-size: clamp(2.3rem, 10.5vw, 6rem);
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.05;
     letter-spacing: -0.035em;
     max-width: 14ch;
     color: var(--text);
@@ -272,14 +274,21 @@
 .footer-row {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    padding-top: 1.75rem;
+    gap: 1rem;
+    padding-top: var(--foot-gap);
     border-top: 1px solid var(--line);
 }
 
 .footer-note {
     margin: 0;
     font-size: 0.88rem;
+}
+
+/* three link pills fit on one row of a phone */
+.footer-row .social-link {
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 0.92rem;
 }
 
 /* ---------- desktop ---------- */
@@ -299,12 +308,17 @@
     }
     .footer-cta {
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
     }
     .footer-row {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+    .footer-row .social-link {
+        min-height: 44px;
+        padding: 0 18px;
+        font-size: 0.95rem;
     }
 }
