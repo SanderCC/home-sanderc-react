@@ -226,7 +226,6 @@
 /* ---------- desktop ---------- */
 @media (min-width: 900px) {
     .hero {
-        overflow-x: visible;
         grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
         grid-template-areas: "name stage" "copy stage";
         grid-template-rows: auto 1fr;
@@ -246,6 +245,12 @@
         width: min(100%, 520px);
         margin-top: 0;
         align-self: center;
+    }
+}
+
+@media (min-width: 1240px) {
+    .hero {
+        overflow-x: visible;
     }
 }
 

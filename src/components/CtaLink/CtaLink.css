@@ -10,6 +10,8 @@
     font-size: 1rem;
     text-decoration: none;
     overflow: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
     translate: var(--tx, 0) var(--ty, 0);
     transition: translate 500ms var(--ease-out), scale 160ms var(--ease-out), background 250ms, border-color 250ms;
 }
