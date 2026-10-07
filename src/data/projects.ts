@@ -62,8 +62,8 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://kbfkb.be",
             linkLabel: "kbfkb.be",
             description:
-                "A website built for KBFKB.",
-            tags: ["Web"],
+                "The official website of the Royal Billiards Federation Klein-Brabant, with clubs, calendar, results and rankings.",
+            tags: ["React", ".NET"],
         },
     ],
     nl: [
@@ -118,8 +118,8 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://kbfkb.be",
             linkLabel: "kbfkb.be",
             description:
-                "Een website gebouwd voor KBFKB.",
-            tags: ["Web"],
+                "De officiële website van de Koninklijke Biljartfederatie Klein-Brabant, met clubs, kalender, uitslagen en rangschikking.",
+            tags: ["React", ".NET"],
         },
     ],
     fr: [
@@ -175,8 +175,8 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://kbfkb.be",
             linkLabel: "kbfkb.be",
             description:
-                "Un site web conçu pour KBFKB.",
-            tags: ["Web"],
+                "Le site officiel de la Fédération Royale de Billard Klein-Brabant, avec clubs, calendrier, résultats et classement.",
+            tags: ["React", ".NET"],
         },
     ],
 };
