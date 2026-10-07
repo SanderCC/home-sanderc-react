@@ -22,6 +22,11 @@ jobs:
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
+        env:
+          # New Relic Browser agent (public by design, inlined into the page at build time)
+          NEXT_PUBLIC_NEW_RELIC_LICENSE_KEY: NRJS-f950081df47066332a9
+          NEXT_PUBLIC_NEW_RELIC_APPLICATION_ID: "538911835"
+          NEXT_PUBLIC_NEW_RELIC_ACCOUNT_ID: "8539756"
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_DUNE_0CB4FAF1E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
