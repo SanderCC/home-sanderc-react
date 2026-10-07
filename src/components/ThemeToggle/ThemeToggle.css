@@ -1,57 +1,50 @@
 .theme-toggle {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.theme-toggle-track {
     position: relative;
-    width: 52px;
-    height: 28px;
-    border-radius: 999px;
-    background: var(--color-border);
-    display: inline-flex;
-    align-items: center;
-    padding: 0 7px;
-    transition: background 0.3s ease;
-}
-
-.theme-toggle[data-selected] .theme-toggle-track {
-    background: var(--color-accent);
-}
-
-.theme-toggle[data-focus-visible] .theme-toggle-track {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
-}
-
-.theme-toggle-icon {
-    font-size: 12px;
-    line-height: 1;
-    color: #fff;
-    opacity: 0.9;
-}
-
-.theme-toggle-icon-sun {
-    margin-right: auto;
-}
-
-.theme-toggle-icon-moon {
-    margin-left: auto;
-}
-
-.theme-toggle-thumb {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 22px;
-    height: 22px;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    cursor: pointer;
+    transition: scale 160ms var(--ease-out), background 200ms;
 }
 
-.theme-toggle[data-selected] .theme-toggle-thumb {
-    transform: translateX(24px);
+.theme-toggle:active {
+    scale: 0.92;
+}
+
+.tt-icon {
+    grid-area: 1 / 1;
+    transition: transform 450ms var(--ease-out), opacity 250ms, filter 250ms;
+}
+
+/* dark theme shows the moon, light shows the sun */
+.theme-toggle .tt-sun {
+    opacity: 0;
+    transform: rotate(-80deg) scale(0.6);
+    filter: blur(3px);
+}
+.theme-toggle[data-selected] .tt-sun {
+    opacity: 1;
+    transform: none;
+    filter: none;
+}
+.theme-toggle[data-selected] .tt-moon {
+    opacity: 0;
+    transform: rotate(80deg) scale(0.6);
+    filter: blur(3px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .theme-toggle:hover {
+        background: var(--surface-hi);
+    }
+}
+
+.theme-toggle[data-focus-visible] {
+    outline: 2px solid var(--aqua);
+    outline-offset: 3px;
 }

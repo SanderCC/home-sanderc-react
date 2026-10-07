@@ -34,7 +34,7 @@ export default function Education() {
                     {langItems.map((item) => (
                         <Chip key={item.name}>
                             {item.name}
-                            {item.note && <span className="text-muted"> · {item.note}</span>}
+                            {item.note && <span className="text-muted">{item.note}</span>}
                         </Chip>
                     ))}
                 </div>

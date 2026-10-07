@@ -1,82 +1,126 @@
 .timeline {
     position: relative;
-    margin: 0;
-    padding: 0;
     list-style: none;
+    margin: 0;
+    padding: 0 0 0 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.timeline::before {
+.timeline::before,
+.timeline::after {
     content: "";
     position: absolute;
-    left: 11px;
-    top: 6px;
-    bottom: 6px;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
     width: 2px;
-    background: var(--color-border);
+    border-radius: 2px;
+}
+.timeline::before {
+    background: var(--line);
+}
+.timeline::after {
+    background: var(--iris);
+    transform-origin: top;
+}
+
+@supports (animation-timeline: view()) {
+    .timeline::after {
+        transform: scaleY(0);
+        animation: timeline-fill linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 75%;
+    }
+    @keyframes timeline-fill {
+        to {
+            transform: scaleY(1);
+        }
+    }
+}
+@supports not (animation-timeline: view()) {
+    .timeline::after {
+        display: none;
+    }
 }
 
 .timeline-item {
     position: relative;
-    padding: 0 0 32px 40px;
-}
-
-.timeline-item:last-child {
-    padding-bottom: 0;
+    list-style: none;
 }
 
 .timeline-dot {
     position: absolute;
-    left: 4px;
-    top: 4px;
+    left: -28px;
+    top: 30px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: var(--color-bg);
-    border: 3px solid var(--color-accent);
+    background: var(--bg);
+    border: 2px solid var(--aqua);
+    box-shadow: 0 0 0 5px color-mix(in srgb, var(--aqua) 18%, transparent);
+    z-index: 2;
 }
 
 .timeline-card {
-    background: var(--color-bg-elevated);
-    border: 1px solid var(--color-border);
-    border-radius: 16px;
-    padding: 20px 24px;
-    box-shadow: var(--shadow-card);
-}
-
-.timeline-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px;
-    align-items: baseline;
-    margin-bottom: 4px;
-}
-
-.timeline-role {
-    font-weight: 600;
+    padding: 22px 22px 24px;
 }
 
 .timeline-period {
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-    font-weight: 500;
-    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    background: color-mix(in srgb, var(--aqua) 16%, transparent);
+    border: 1px solid color-mix(in srgb, var(--aqua) 35%, transparent);
+}
+
+.timeline-role {
+    margin: 0 0 0.15rem;
+    font-size: clamp(1.4rem, 4.5vw, 1.85rem);
+    letter-spacing: -0.025em;
 }
 
 .timeline-company {
-    color: var(--color-accent);
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    display: block;
+    color: var(--muted);
+    font-weight: 500;
 }
 
 .timeline-bullets {
-    margin: 8px 0 0;
-    padding-left: 18px;
-    color: var(--color-text-muted);
+    margin: 1rem 0 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 68ch;
 }
 
-.timeline-bullets li {
-    margin-bottom: 4px;
+.timeline-bullets li::marker {
+    color: var(--violet);
+}
+
+@media (min-width: 700px) {
+    .timeline {
+        padding-left: 44px;
+        gap: 22px;
+    }
+    .timeline::before,
+    .timeline::after {
+        left: 11px;
+    }
+    .timeline-dot {
+        left: -44px;
+        top: 34px;
+        width: 24px;
+        height: 24px;
+    }
+    .timeline-card {
+        padding: 28px 32px 30px;
+    }
 }

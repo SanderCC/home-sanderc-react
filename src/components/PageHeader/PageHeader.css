@@ -1,13 +1,17 @@
 .page-header {
-    padding: 64px 24px 32px;
-    text-align: center;
+    padding-top: clamp(2.5rem, 9vw, 6rem);
+    padding-bottom: clamp(1.5rem, 5vw, 3rem);
 }
 
-.page-header h1 {
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
+.page-title {
+    margin: 0 0 1rem;
+    font-size: clamp(2.5rem, 11vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
 }
 
-.page-header p {
-    max-width: 560px;
-    margin: 12px auto 0;
+.page-subtitle {
+    margin: 0;
+    max-width: 52ch;
+    font-size: clamp(1.02rem, 2.6vw, 1.2rem);
 }

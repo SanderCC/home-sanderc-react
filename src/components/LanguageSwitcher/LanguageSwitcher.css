@@ -1,32 +1,44 @@
 .lang-switcher {
     display: inline-flex;
-    align-items: center;
-    gap: 2px;
-    background: var(--color-border);
-    border-radius: 999px;
     padding: 3px;
+    gap: 2px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--line);
 }
 
 .lang-switcher-btn {
-    border: none;
-    background: none;
-    padding: 5px 10px;
+    min-width: 40px;
+    height: 36px;
+    padding: 0 10px;
+    border: 0;
     border-radius: 999px;
-    font-size: 0.72rem;
-    font-weight: 700;
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 600;
     letter-spacing: 0.02em;
-    color: var(--color-text-muted);
     cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: background 200ms var(--ease-out), color 200ms, scale 160ms var(--ease-out);
+}
+
+.lang-switcher-btn:active {
+    scale: 0.94;
 }
 
 .lang-switcher-btn[data-active] {
-    background: var(--color-bg-elevated);
-    color: var(--color-accent);
-    box-shadow: var(--shadow-card);
+    background: var(--text);
+    color: var(--bg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .lang-switcher-btn:not([data-active]):hover {
+        color: var(--text);
+        background: var(--surface-hi);
+    }
 }
 
 .lang-switcher-btn[data-focus-visible] {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--aqua);
     outline-offset: 2px;
 }

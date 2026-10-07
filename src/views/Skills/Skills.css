@@ -1,9 +1,33 @@
-.favorites-list {
-    margin-bottom: 40px;
-}
-
-.chip-grid {
+.chip-grid,
+.chip-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 8px;
+}
+
+.favorites-list {
+    margin-bottom: 0.5rem;
+}
+
+.skill-group {
+    padding: 22px 22px 26px;
+}
+
+.skill-group h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+}
+
+.skill-groups {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 2rem;
+}
+
+@media (min-width: 800px) {
+    .skill-groups {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
 }

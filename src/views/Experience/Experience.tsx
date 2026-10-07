@@ -34,7 +34,7 @@ export default function Experience() {
                 <div className="chip-list">
                     {otherItems.map((item) => (
                         <Chip key={item.title}>
-                            {item.title} · <span className="text-muted">{item.period}</span>
+                            {item.title} <span className="text-muted">{item.period}</span>
                         </Chip>
                     ))}
                 </div>

@@ -1,0 +1,256 @@
+.hero {
+    overflow-x: clip; /* rotating rings have a larger bounding box than the stage */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "name" "stage" "copy";
+    padding-top: clamp(1.5rem, 6vw, 3rem);
+    padding-bottom: clamp(1rem, 4vw, 2rem);
+}
+
+.hero-name {
+    grid-area: name;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: clamp(2.7rem, 15vw, 6.2rem);
+    max-width: 5.6em;
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    padding-top: 1rem;
+}
+
+/* ---------- stage ---------- */
+.hero-stage {
+    grid-area: stage;
+    position: relative;
+    width: min(100%, 400px);
+    justify-self: center;
+    aspect-ratio: 1 / 1.02;
+    margin-top: -1.2rem;
+}
+
+.hero-orb,
+.hero-photo-wrap,
+.hero-float {
+    position: absolute;
+    will-change: transform;
+}
+
+.hero-orb {
+    left: 8%;
+    right: 8%;
+    top: 12%;
+    aspect-ratio: 1;
+    z-index: 0;
+}
+
+.hero-orb-fill {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, var(--violet), var(--aqua), var(--amber), var(--rose), var(--violet));
+    filter: blur(2px);
+    opacity: 0.9;
+    animation: spin 24s linear infinite;
+}
+
+.hero-orb-fill::after {
+    content: "";
+    position: absolute;
+    inset: 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--bg) 20%, transparent), var(--bg) 78%);
+    opacity: 0.8;
+}
+
+.hero-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--text) 22%, transparent);
+    pointer-events: none;
+    z-index: 0;
+}
+.hero-ring i {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    border-radius: 50%;
+    background: var(--aqua);
+    box-shadow: 0 0 14px 2px var(--aqua);
+}
+.hero-ring-1 {
+    inset: 2% 0% 0% 2%;
+    animation: spin 30s linear infinite;
+}
+.hero-ring-2 {
+    inset: 14% 12%;
+    border-style: dashed;
+    animation: spin 40s linear infinite reverse;
+}
+.hero-ring-2 i {
+    background: var(--amber);
+    box-shadow: 0 0 14px 2px var(--amber);
+}
+
+.hero-photo-wrap {
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-photo {
+    width: 100%;
+    transform-origin: 50% 90%;
+    filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.35));
+    animation: photo-in 900ms var(--ease-out) 250ms backwards;
+}
+
+@keyframes photo-in {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.94);
+        filter: blur(8px);
+    }
+}
+
+.hero-float {
+    z-index: 4;
+}
+
+.hero-chip {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+    background: var(--header-bg);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    animation: bob 7s ease-in-out infinite;
+}
+
+.f1 {
+    left: -2%;
+    top: 22%;
+}
+.f2 {
+    right: -2%;
+    top: 36%;
+}
+.f3 {
+    left: 2%;
+    bottom: 22%;
+}
+.f4 {
+    right: 4%;
+    top: 8%;
+}
+
+@keyframes bob {
+    50% {
+        transform: translateY(-9px);
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------- copy ---------- */
+.hero-copy {
+    grid-area: copy;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 8px 16px 8px 12px;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+}
+
+.hero-pill-dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--aqua);
+}
+.hero-pill-dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--aqua);
+    animation: ping 2.4s var(--ease-out) infinite;
+}
+@keyframes ping {
+    to {
+        transform: scale(3.2);
+        opacity: 0;
+    }
+}
+
+.hero-subtitle {
+    margin: 0;
+    max-width: 46ch;
+    font-size: clamp(1.05rem, 3vw, 1.25rem);
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 0.4rem;
+}
+
+/* ---------- desktop ---------- */
+@media (min-width: 900px) {
+    .hero {
+        grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+        grid-template-areas: "name stage" "copy stage";
+        grid-template-rows: auto 1fr;
+        column-gap: 3rem;
+        align-items: start;
+        padding-top: clamp(2.5rem, 6vw, 4.5rem);
+    }
+    .hero-name {
+        padding-top: 2rem;
+    }
+    .hero-copy {
+        margin-top: 1.5rem;
+        align-self: start;
+    }
+    .hero-stage {
+        grid-row: 1 / span 2;
+        width: min(100%, 520px);
+        margin-top: 0;
+        align-self: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-photo {
+        animation: none;
+    }
+}

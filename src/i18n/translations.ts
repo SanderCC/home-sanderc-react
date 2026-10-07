@@ -12,6 +12,7 @@ export type TranslationKey =
     | "menuToggle"
     | "langSwitcher"
     | "footer.location"
+    | "footer.cta"
     | "hero.eyebrow"
     | "hero.greeting"
     | "hero.subtitle"
@@ -59,7 +60,8 @@ export const translations: Record<Lang, Record<TranslationKey, string>> = {
         menuToggle: "Toggle menu",
         langSwitcher: "Change language",
         "footer.location": "Belgium",
-        "hero.eyebrow": "Software Engineer · Belgium",
+        "footer.cta": "Have an idea? Let's talk.",
+        "hero.eyebrow": "Software engineer in Belgium",
         "hero.greeting": "Hi, I'm",
         "hero.subtitle":
             "A passionate developer with a diverse skill set and a love for creating innovative solutions — using AI to speed up the process and ship bigger applications in less time.",
@@ -109,7 +111,8 @@ export const translations: Record<Lang, Record<TranslationKey, string>> = {
         menuToggle: "Menu in-/uitschakelen",
         langSwitcher: "Taal wijzigen",
         "footer.location": "België",
-        "hero.eyebrow": "Software Engineer · België",
+        "footer.cta": "Een idee? Laten we praten.",
+        "hero.eyebrow": "Software engineer in België",
         "hero.greeting": "Hoi, ik ben",
         "hero.subtitle":
             "Een gedreven ontwikkelaar met een brede vaardighedenset en een passie voor het bouwen van innovatieve oplossingen — met AI werk ik sneller en bouw ik grotere applicaties in minder tijd.",
@@ -159,7 +162,8 @@ export const translations: Record<Lang, Record<TranslationKey, string>> = {
         menuToggle: "Ouvrir/fermer le menu",
         langSwitcher: "Changer de langue",
         "footer.location": "Belgique",
-        "hero.eyebrow": "Software Engineer · Belgique",
+        "footer.cta": "Une idée ? Parlons-en.",
+        "hero.eyebrow": "Ingénieur logiciel en Belgique",
         "hero.greeting": "Bonjour, je suis",
         "hero.subtitle":
             "Un développeur passionné, doté de compétences variées et animé par l'envie de créer des solutions innovantes — j'utilise l'IA pour accélérer le développement et livrer de plus grandes applications en moins de temps.",

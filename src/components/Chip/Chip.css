@@ -1,35 +1,44 @@
-@keyframes chip-pop {
-    from {
-        opacity: 0;
-        transform: translateY(8px) scale(0.96);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
 .chip {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 8px 16px;
+    min-height: 38px;
+    padding: 0 16px;
     border-radius: 999px;
-    background: var(--color-bg-elevated);
-    border: 1px solid var(--color-border);
-    font-size: 0.85rem;
+    font-size: 0.93rem;
     font-weight: 500;
-    box-shadow: var(--shadow-card);
-    animation: chip-pop 0.45s ease both;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: transform 300ms var(--ease-out), background 250ms, border-color 250ms;
+    animation: chip-in 500ms var(--ease-out) backwards;
 }
 
 .chip-accent {
-    color: var(--color-accent);
-    background: var(--color-accent-soft);
-    border-color: transparent;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-weight: 600;
-    padding: 4px 10px;
+    min-height: 30px;
+    padding: 0 12px;
+    font-size: 0.82rem;
+    background: color-mix(in srgb, var(--violet) 16%, transparent);
+    border-color: color-mix(in srgb, var(--violet) 35%, transparent);
+}
+
+.chip:active {
+    transform: scale(0.96);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .chip:hover {
+        transform: translateY(-3px);
+        background: var(--surface-hi);
+        border-color: color-mix(in srgb, var(--aqua) 55%, transparent);
+    }
+}
+
+@keyframes chip-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.95);
+    }
 }

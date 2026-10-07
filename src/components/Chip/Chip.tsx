@@ -12,6 +12,7 @@ export default function Chip({ children, variant = "default", delay }: ChipProps
         <span
             className={`chip ${variant === "accent" ? "chip-accent" : ""}`}
             style={delay !== undefined ? { animationDelay: `${delay}ms` } : undefined}
+            data-cursor
         >
             {children}
         </span>

@@ -1,0 +1,143 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    contain: strict;
+}
+
+.aurora {
+    position: absolute;
+    inset: 0;
+    opacity: var(--aurora-opacity);
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    mix-blend-mode: var(--blend);
+    will-change: transform;
+}
+
+.blob-1 {
+    width: 90vmax;
+    height: 90vmax;
+    top: -40vmax;
+    left: -30vmax;
+    background: radial-gradient(closest-side, var(--violet), transparent 70%);
+    animation: drift-1 38s ease-in-out infinite alternate;
+}
+
+.blob-2 {
+    width: 80vmax;
+    height: 80vmax;
+    top: 10vh;
+    right: -40vmax;
+    background: radial-gradient(closest-side, var(--aqua), transparent 70%);
+    animation: drift-2 46s ease-in-out infinite alternate;
+}
+
+.blob-3 {
+    width: 70vmax;
+    height: 70vmax;
+    bottom: -45vmax;
+    left: 5vw;
+    background: radial-gradient(closest-side, var(--amber), transparent 70%);
+    opacity: 0.7;
+    animation: drift-3 52s ease-in-out infinite alternate;
+}
+
+@keyframes drift-1 {
+    to {
+        transform: translate3d(18vmax, 12vmax, 0) scale(1.15);
+    }
+}
+@keyframes drift-2 {
+    to {
+        transform: translate3d(-22vmax, 16vmax, 0) scale(0.9);
+    }
+}
+@keyframes drift-3 {
+    to {
+        transform: translate3d(20vmax, -14vmax, 0) scale(1.1);
+    }
+}
+
+.dotgrid {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, var(--text) 1px, transparent 1.4px);
+    background-size: 28px 28px;
+    opacity: 0.5;
+    -webkit-mask-image: radial-gradient(circle 240px at var(--mx, 50%) var(--my, 30%), #000, transparent);
+    mask-image: radial-gradient(circle 240px at var(--mx, 50%) var(--my, 30%), #000, transparent);
+}
+
+.spot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, color-mix(in srgb, var(--violet) 22%, transparent), transparent);
+    will-change: transform;
+}
+
+.grain {
+    position: absolute;
+    inset: 0;
+    opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+.burst-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.burst-dot {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.cursor-ring,
+.cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 95;
+    pointer-events: none;
+    opacity: 0;
+    display: none;
+}
+
+.cursor-ring {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--text);
+    mix-blend-mode: difference;
+    will-change: transform;
+}
+
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text);
+    mix-blend-mode: difference;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cursor-ring,
+    .cursor-dot {
+        display: block;
+    }
+}

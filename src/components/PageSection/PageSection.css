@@ -1,14 +1,3 @@
 .page-section {
-    padding: 0 24px 80px;
-}
-
-.section-subheading {
-    margin: 48px 0 16px;
-    font-size: 1.1rem;
-}
-
-.chip-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    padding-bottom: clamp(1rem, 4vw, 2rem);
 }

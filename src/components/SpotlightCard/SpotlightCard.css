@@ -1,0 +1,77 @@
+.sc {
+    --hue: 258;
+    --tint: hsl(var(--hue) 90% 70%);
+    position: relative;
+    border-radius: var(--radius);
+    transform-style: preserve-3d;
+    transition: scale 200ms var(--ease-out);
+    will-change: transform;
+    height: 100%;
+}
+
+.sc:active {
+    scale: 0.985;
+}
+
+.sc-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+}
+
+/* soft light under the pointer */
+.sc-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 300ms var(--ease-out);
+    background: radial-gradient(360px circle at var(--sx, 50%) var(--sy, 0%), color-mix(in srgb, var(--tint) 24%, transparent), transparent 65%);
+}
+
+/* lit border under the pointer */
+.sc-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    opacity: 0;
+    transition: opacity 300ms var(--ease-out);
+    background: radial-gradient(220px circle at var(--sx, 50%) var(--sy, 0%), var(--tint), transparent 70%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+
+.sc-body {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.sc-body [data-z] {
+    transition: transform 400ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .sc:hover .sc-bg::before,
+    .sc:hover .sc-bg::after {
+        opacity: 1;
+    }
+    .sc:hover [data-z] {
+        transform: translateZ(28px);
+    }
+}
+
+/* touch: light up while the finger is down */
+.sc:active .sc-bg::before,
+.sc:active .sc-bg::after {
+    opacity: 1;
+}

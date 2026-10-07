@@ -11,12 +11,12 @@ export interface Project {
 export const projects: Record<Lang, Project[]> = {
     en: [
         {
-            name: "CiTRadio DJ Platform",
+            name: "CITRadio DJ Platform",
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
             description:
-                "A platform built for CiTRadio, giving DJs the tools they need to manage their shows and schedule.",
-            tags: ["React"],
+                "A platform built for CITRadio, giving DJs the tools they need to manage their shows and schedule.",
+            tags: ["React", ".NET"],
         },
         {
             name: "Bel'Maison Integrations",
@@ -27,20 +27,52 @@ export const projects: Record<Lang, Project[]> = {
         },
         {
             name: "Bel'Maison",
-            url: "https://wonderful-flower-017777c03.7.azurestaticapps.net/",
+            url: "https://belmaison-seo.sanderc.net/en",
             linkLabel: "belmaison.immo",
             description:
                 "A French real estate platform for buying and selling residential and commercial property with confidence.",
             tags: ["React", "Real Estate"],
         },
+        {
+            name: "W&M Tent Service",
+            url: "https://wmtentservice.sanderc.net",
+            linkLabel: "wmtentservice.sanderc.net",
+            description:
+                "A monitoring dashboard that keeps an eye on the heating devices of W&M Tent Service.",
+            tags: ["Dashboard"],
+        },
+        {
+            name: "HaspelPlanner",
+            url: "https://haspelplanner.sanderc.net",
+            linkLabel: "haspelplanner.sanderc.net",
+            description:
+                "Plan customer visits, calculate the best route and register sales on the road.",
+            tags: ["Planning", "Routes"],
+        },
+        {
+            name: "SupportersClub.net",
+            url: "https://supportersclub.net",
+            linkLabel: "supportersclub.net",
+            description:
+                "A platform to find and join a supporters club, get tickets and share events with all members.",
+            tags: ["Community", "Events"],
+        },
+        {
+            name: "KBFKB",
+            url: "https://kbfkb.be",
+            linkLabel: "kbfkb.be",
+            description:
+                "A website built for KBFKB.",
+            tags: ["Web"],
+        },
     ],
     nl: [
         {
-            name: "CiTRadio DJ-platform",
+            name: "CITRadio DJ-platform",
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
-            description: "Een platform gebouwd voor CiTRadio, dat dj's de tools geeft om hun shows en planning te beheren.",
-            tags: ["React"],
+            description: "Een platform gebouwd voor CITRadio, dat dj's de tools geeft om hun shows en planning te beheren.",
+            tags: ["React", ".NET"],
         },
         {
             name: "Bel'Maison Integraties",
@@ -51,21 +83,53 @@ export const projects: Record<Lang, Project[]> = {
         },
         {
             name: "Bel'Maison",
-            url: "https://wonderful-flower-017777c03.7.azurestaticapps.net/",
+            url: "https://belmaison-seo.sanderc.net/en",
             linkLabel: "belmaison.immo",
             description:
                 "Een Frans vastgoedplatform om met vertrouwen woningen en commercieel vastgoed te kopen en verkopen.",
             tags: ["React", "Vastgoed"],
         },
+        {
+            name: "W&M Tent Service",
+            url: "https://wmtentservice.sanderc.net",
+            linkLabel: "wmtentservice.sanderc.net",
+            description:
+                "Een monitoringdashboard dat de verwarmingstoestellen van W&M Tent Service in de gaten houdt.",
+            tags: ["Dashboard"],
+        },
+        {
+            name: "HaspelPlanner",
+            url: "https://haspelplanner.sanderc.net",
+            linkLabel: "haspelplanner.sanderc.net",
+            description:
+                "Plan je klantbezoeken, bereken de beste route en registreer je verkoop onderweg.",
+            tags: ["Planning", "Routes"],
+        },
+        {
+            name: "SupportersClub.net",
+            url: "https://supportersclub.net",
+            linkLabel: "supportersclub.net",
+            description:
+                "Een platform om een supportersclub te vinden en lid te worden, tickets te bestellen en evenementen met alle leden te delen.",
+            tags: ["Community", "Evenementen"],
+        },
+        {
+            name: "KBFKB",
+            url: "https://kbfkb.be",
+            linkLabel: "kbfkb.be",
+            description:
+                "Een website gebouwd voor KBFKB.",
+            tags: ["Web"],
+        },
     ],
     fr: [
         {
-            name: "Plateforme DJ CiTRadio",
+            name: "Plateforme DJ CITRadio",
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
             description:
-                "Une plateforme conçue pour CiTRadio, donnant aux DJ les outils nécessaires pour gérer leurs émissions et leur planning.",
-            tags: ["React"],
+                "Une plateforme conçue pour CITRadio, donnant aux DJ les outils nécessaires pour gérer leurs émissions et leur planning.",
+            tags: ["React", ".NET"],
         },
         {
             name: "Intégrations Bel'Maison",
@@ -76,11 +140,43 @@ export const projects: Record<Lang, Project[]> = {
         },
         {
             name: "Bel'Maison",
-            url: "https://wonderful-flower-017777c03.7.azurestaticapps.net/",
+            url: "https://belmaison-seo.sanderc.net/en",
             linkLabel: "belmaison.immo",
             description:
                 "Une plateforme immobilière française pour acheter et vendre en toute confiance biens résidentiels et commerciaux.",
             tags: ["React", "Immobilier"],
+        },
+        {
+            name: "W&M Tent Service",
+            url: "https://wmtentservice.sanderc.net",
+            linkLabel: "wmtentservice.sanderc.net",
+            description:
+                "Un tableau de bord de suivi qui surveille les appareils de chauffage de W&M Tent Service.",
+            tags: ["Dashboard"],
+        },
+        {
+            name: "HaspelPlanner",
+            url: "https://haspelplanner.sanderc.net",
+            linkLabel: "haspelplanner.sanderc.net",
+            description:
+                "Planifiez vos visites clients, calculez le meilleur itinéraire et enregistrez vos ventes en déplacement.",
+            tags: ["Planification", "Itinéraires"],
+        },
+        {
+            name: "SupportersClub.net",
+            url: "https://supportersclub.net",
+            linkLabel: "supportersclub.net",
+            description:
+                "Une plateforme pour trouver et rejoindre un club de supporters, obtenir des billets et partager des événements avec tous les membres.",
+            tags: ["Communauté", "Événements"],
+        },
+        {
+            name: "KBFKB",
+            url: "https://kbfkb.be",
+            linkLabel: "kbfkb.be",
+            description:
+                "Un site web conçu pour KBFKB.",
+            tags: ["Web"],
         },
     ],
 };

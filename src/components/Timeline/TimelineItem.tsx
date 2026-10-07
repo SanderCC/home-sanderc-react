@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "@/components/Reveal";
+import SpotlightCard from "@/components/SpotlightCard";
 
 interface TimelineItemProps {
     title: string;
@@ -13,20 +14,20 @@ export default function TimelineItem({ title, subtitle, period, bullets, delay =
     return (
         <Reveal delay={delay} className="timeline-item">
             <span className="timeline-dot" aria-hidden="true" />
-            <div className="timeline-card">
-                <div className="timeline-header">
-                    <span className="timeline-role">{title}</span>
+            <SpotlightCard as="div" tilt={2.5}>
+                <div className="timeline-card">
                     <span className="timeline-period">{period}</span>
+                    <h3 className="timeline-role">{title}</h3>
+                    {subtitle && <span className="timeline-company">{subtitle}</span>}
+                    {bullets && bullets.length > 0 && (
+                        <ul className="timeline-bullets">
+                            {bullets.map((bullet) => (
+                                <li key={bullet}>{bullet}</li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
-                {subtitle && <span className="timeline-company">{subtitle}</span>}
-                {bullets && bullets.length > 0 && (
-                    <ul className="timeline-bullets">
-                        {bullets.map((bullet) => (
-                            <li key={bullet}>{bullet}</li>
-                        ))}
-                    </ul>
-                )}
-            </div>
+            </SpotlightCard>
         </Reveal>
     );
 }

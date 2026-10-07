@@ -1,37 +1,69 @@
 .btn {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 22px;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 26px;
     border-radius: 999px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     text-decoration: none;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    overflow: hidden;
+    translate: var(--tx, 0) var(--ty, 0);
+    transition: translate 500ms var(--ease-out), scale 160ms var(--ease-out), background 250ms, border-color 250ms;
+}
+
+.btn[data-moving] {
+    transition: translate 90ms linear, scale 160ms var(--ease-out), background 250ms, border-color 250ms;
 }
 
 .btn:active {
-    transform: scale(0.97);
+    scale: 0.96;
+}
+
+.btn-label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    translate: var(--lx, 0) var(--ly, 0);
+    transition: translate 500ms var(--ease-out);
+}
+.btn[data-moving] .btn-label {
+    transition: translate 90ms linear;
+}
+
+.btn-icon {
+    transition: transform 300ms var(--ease-out);
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-2));
-    color: #fff;
-    box-shadow: 0 8px 20px -8px var(--color-accent);
+    color: #0a0a12;
+    background: var(--iris);
+    background-size: 160% 100%;
+    background-position: var(--shine, 0%) 0;
+    box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--violet) 70%, transparent);
 }
-
-.btn-primary:hover {
-    box-shadow: 0 10px 26px -8px var(--color-accent);
+:root[data-theme="light"] .btn-primary {
+    color: #fff;
+    background: linear-gradient(105deg, var(--violet), color-mix(in srgb, var(--violet) 60%, var(--aqua)));
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.08);
-    color: #f2f2fb;
-    border-color: rgba(255, 255, 255, 0.25);
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
 }
 
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.16);
+@media (hover: hover) and (pointer: fine) {
+    .btn-secondary:hover {
+        background: var(--surface-hi);
+        border-color: color-mix(in srgb, var(--text) 30%, transparent);
+    }
+    .btn:hover .btn-icon {
+        transform: translate(2px, -2px);
+    }
 }

@@ -1,33 +1,93 @@
 .quick-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 64px 24px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-top: clamp(3rem, 8vw, 5rem);
 }
 
 .quick-card {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    min-height: 168px;
     height: 100%;
-    text-decoration: none;
     padding: 24px;
-    border-radius: 18px;
-    background: var(--color-bg-elevated);
-    border: 1px solid var(--color-border);
-    box-shadow: var(--shadow-card);
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+    border-radius: var(--radius);
 }
 
-.quick-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--color-accent);
-}
-
-.quick-card h3 {
-    margin: 0 0 6px;
-    font-size: 1.05rem;
-}
-
-.quick-card p {
+.quick-title {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: clamp(1.9rem, 6vw, 2.6rem);
+    letter-spacing: -0.03em;
+    font-variation-settings: "wdth" 88;
+}
+
+.quick-desc {
+    margin: 0;
+    max-width: 30ch;
+    font-size: 0.98rem;
+    padding-right: 56px;
+}
+
+.quick-go {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: var(--text);
+    background: var(--surface-hi);
+    border: 1px solid var(--line);
+    transition: background 300ms var(--ease-out), color 300ms, transform 400ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .quick-card:hover .quick-go {
+        background: var(--text);
+        color: var(--bg);
+        transform: translateZ(28px) rotate(45deg);
+    }
+}
+
+@media (min-width: 700px) {
+    .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .quick-grid > :first-child {
+        grid-column: span 2;
+    }
+    .quick-grid > :last-child:nth-child(even) {
+        grid-column: span 2;
+    }
+    .quick-card {
+        min-height: 220px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .quick-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 18px;
+    }
+    .quick-grid > * {
+        grid-column: span 2 !important;
+    }
+    .quick-grid > :nth-child(1) {
+        grid-column: span 4 !important;
+    }
+    .quick-grid > :nth-child(4) {
+        grid-column: span 4 !important;
+    }
+    .quick-grid > :nth-child(5) {
+        grid-column: span 2 !important;
+    }
+    .quick-card {
+        min-height: 260px;
+    }
 }

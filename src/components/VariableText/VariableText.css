@@ -1,0 +1,14 @@
+.vt {
+    font-family: var(--font-display);
+}
+
+.vt-word {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.vt-letter {
+    display: inline-block;
+    font-variation-settings: "wght" 560, "wdth" 80;
+    will-change: font-variation-settings;
+}

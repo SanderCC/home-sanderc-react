@@ -12,26 +12,31 @@ interface ThemeContextValue {
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-    const [theme, setTheme] = useState<Theme>("light");
+    const [theme, setTheme] = useState<Theme>("dark");
 
+    // The inline script in <head> has already set data-theme before first paint; just sync to it.
     useEffect(() => {
-        const stored = window.localStorage.getItem("theme");
-        if (stored === "light" || stored === "dark") {
-            setTheme(stored);
-        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            setTheme("dark");
-        }
+        const current = document.documentElement.getAttribute("data-theme");
+        if (current === "light" || current === "dark") setTheme(current);
     }, []);
-
-    useEffect(() => {
-        document.documentElement.setAttribute("data-theme", theme);
-        window.localStorage.setItem("theme", theme);
-    }, [theme]);
 
     const value = useMemo<ThemeContextValue>(
         () => ({
             theme,
-            toggleTheme: () => setTheme((t) => (t === "light" ? "dark" : "light")),
+            toggleTheme: () => {
+                const next: Theme = theme === "light" ? "dark" : "light";
+                const apply = () => {
+                    document.documentElement.setAttribute("data-theme", next);
+                    setTheme(next);
+                    try {
+                        window.localStorage.setItem("theme", next);
+                    } catch {}
+                };
+                const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                const start = (document as unknown as { startViewTransition?: (cb: () => void) => unknown }).startViewTransition;
+                if (start && !reduced) start.call(document, apply);
+                else apply();
+            },
         }),
         [theme]
     );
