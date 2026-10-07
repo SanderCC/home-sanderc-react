@@ -16,14 +16,14 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "dj.citradio.net",
             description:
                 "A platform built for CITRadio, giving DJs the tools they need to manage their shows and schedule.",
-            tags: ["React", ".NET"],
+            tags: ["Radio", "Scheduling"],
         },
         {
             name: "Bel'Maison Integrations",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "An internal integrations dashboard supporting the Bel'Maison real estate platform.",
-            tags: ["React", ".NET"],
+            tags: ["Real Estate", "Dashboard"],
         },
         {
             name: "Bel'Maison",
@@ -31,7 +31,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "A French real estate platform for buying and selling residential and commercial property with confidence.",
-            tags: ["React", "Real Estate"],
+            tags: ["Real Estate", "Website"],
         },
         {
             name: "W&M Tent Service",
@@ -39,7 +39,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "wmtentservice.sanderc.net",
             description:
                 "A monitoring dashboard that keeps an eye on the heating devices of W&M Tent Service.",
-            tags: ["Dashboard"],
+            tags: ["Dashboard", "Monitoring"],
         },
         {
             name: "HaspelPlanner",
@@ -63,7 +63,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "kbfkb.be",
             description:
                 "The official website of the Royal Billiards Federation Klein-Brabant, with clubs, calendar, results and rankings.",
-            tags: ["React", ".NET"],
+            tags: ["Billiards", "Website"],
         },
     ],
     nl: [
@@ -72,14 +72,14 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
             description: "Een platform gebouwd voor CITRadio, dat dj's de tools geeft om hun shows en planning te beheren.",
-            tags: ["React", ".NET"],
+            tags: ["Radio", "Planning"],
         },
         {
             name: "Bel'Maison Integraties",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "Een intern integratiedashboard ter ondersteuning van het Bel'Maison vastgoedplatform.",
-            tags: ["React", ".NET"],
+            tags: ["Vastgoed", "Dashboard"],
         },
         {
             name: "Bel'Maison",
@@ -87,7 +87,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Een Frans vastgoedplatform om met vertrouwen woningen en commercieel vastgoed te kopen en verkopen.",
-            tags: ["React", "Vastgoed"],
+            tags: ["Vastgoed", "Website"],
         },
         {
             name: "W&M Tent Service",
@@ -95,7 +95,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "wmtentservice.sanderc.net",
             description:
                 "Een monitoringdashboard dat de verwarmingstoestellen van W&M Tent Service in de gaten houdt.",
-            tags: ["Dashboard"],
+            tags: ["Dashboard", "Monitoring"],
         },
         {
             name: "HaspelPlanner",
@@ -119,7 +119,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "kbfkb.be",
             description:
                 "De officiële website van de Koninklijke Biljartfederatie Klein-Brabant, met clubs, kalender, uitslagen en rangschikking.",
-            tags: ["React", ".NET"],
+            tags: ["Biljart", "Website"],
         },
     ],
     fr: [
@@ -129,14 +129,14 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "dj.citradio.net",
             description:
                 "Une plateforme conçue pour CITRadio, donnant aux DJ les outils nécessaires pour gérer leurs émissions et leur planning.",
-            tags: ["React", ".NET"],
+            tags: ["Radio", "Planification"],
         },
         {
             name: "Intégrations Bel'Maison",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "Un tableau de bord d'intégrations interne au service de la plateforme immobilière Bel'Maison.",
-            tags: ["React", ".NET"],
+            tags: ["Immobilier", "Tableau de bord"],
         },
         {
             name: "Bel'Maison",
@@ -144,7 +144,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Une plateforme immobilière française pour acheter et vendre en toute confiance biens résidentiels et commerciaux.",
-            tags: ["React", "Immobilier"],
+            tags: ["Immobilier", "Site web"],
         },
         {
             name: "W&M Tent Service",
@@ -152,7 +152,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "wmtentservice.sanderc.net",
             description:
                 "Un tableau de bord de suivi qui surveille les appareils de chauffage de W&M Tent Service.",
-            tags: ["Dashboard"],
+            tags: ["Tableau de bord", "Suivi"],
         },
         {
             name: "HaspelPlanner",
@@ -176,7 +176,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "kbfkb.be",
             description:
                 "Le site officiel de la Fédération Royale de Billard Klein-Brabant, avec clubs, calendrier, résultats et classement.",
-            tags: ["React", ".NET"],
+            tags: ["Billard", "Site web"],
         },
     ],
 };
