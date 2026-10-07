@@ -306,6 +306,10 @@
     .menu {
         display: none;
     }
+}
+
+/* the footer goes side by side earlier than the header nav does */
+@media (min-width: 900px) {
     .footer-cta {
         flex-direction: row;
         align-items: center;
