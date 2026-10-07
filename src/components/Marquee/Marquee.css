@@ -46,9 +46,6 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .marquee:hover .marquee-track {
-        animation-play-state: paused;
-    }
     .marquee-item:hover {
         color: var(--text);
         -webkit-text-stroke-color: transparent;
