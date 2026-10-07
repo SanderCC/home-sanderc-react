@@ -51,19 +51,19 @@ export const projects: Record<Lang, Project[]> = {
             tags: ["Real Estate", "Website", "SEO"],
         },
         {
+            name: "Bel'Maison Integrations",
+            url: "https://belmaison.sanderc.net",
+            linkLabel: "belmaison.sanderc.net",
+            description: "An internal integrations dashboard supporting the Bel'Maison real estate platform.",
+            tags: ["Real Estate", "Data Processing", "Statistics", "Dashboard", "BackOffice"],
+        },
+        {
             name: "CITRadio DJ Platform",
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
             description:
                 "A platform built for CITRadio, giving DJs the tools they need to manage their shows and schedule.",
             tags: ["Radio", "Scheduling", "Team management", "Monitoring"],
-        },
-        {
-            name: "Bel'Maison Integrations",
-            url: "https://belmaison.sanderc.net",
-            linkLabel: "belmaison.sanderc.net",
-            description: "An internal integrations dashboard supporting the Bel'Maison real estate platform.",
-            tags: ["Real Estate", "Integrations", "Dashboard", "BackOffice"],
         },
     ],
     nl: [
@@ -108,18 +108,18 @@ export const projects: Record<Lang, Project[]> = {
             tags: ["Vastgoed", "Website", "SEO"],
         },
         {
+            name: "Bel'Maison Integraties",
+            url: "https://belmaison.sanderc.net",
+            linkLabel: "belmaison.sanderc.net",
+            description: "Een intern integratiedashboard ter ondersteuning van het Bel'Maison vastgoedplatform.",
+            tags: ["Vastgoed", "Gegevensverwerking", "Statistieken", "Dashboard", "BackOffice"],
+        },
+        {
             name: "CITRadio DJ-platform",
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
             description: "Een platform gebouwd voor CITRadio, dat dj's de tools geeft om hun shows en planning te beheren.",
             tags: ["Radio", "Planning", "Teambeheer", "Monitoring"],
-        },
-        {
-            name: "Bel'Maison Integraties",
-            url: "https://belmaison.sanderc.net",
-            linkLabel: "belmaison.sanderc.net",
-            description: "Een intern integratiedashboard ter ondersteuning van het Bel'Maison vastgoedplatform.",
-            tags: ["Vastgoed", "Integraties", "Dashboard", "BackOffice"],
         },
     ],
     fr: [
@@ -164,19 +164,19 @@ export const projects: Record<Lang, Project[]> = {
             tags: ["Immobilier", "Site web", "SEO"],
         },
         {
+            name: "Intégrations Bel'Maison",
+            url: "https://belmaison.sanderc.net",
+            linkLabel: "belmaison.sanderc.net",
+            description: "Un tableau de bord d'intégrations interne au service de la plateforme immobilière Bel'Maison.",
+            tags: ["Immobilier", "Traitement des données", "Statistiques", "Tableau de bord", "BackOffice"],
+        },
+        {
             name: "Plateforme DJ CITRadio",
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
             description:
                 "Une plateforme conçue pour CITRadio, donnant aux DJ les outils nécessaires pour gérer leurs émissions et leur planning.",
             tags: ["Radio", "Planification", "Gestion d'équipe", "Suivi"],
-        },
-        {
-            name: "Intégrations Bel'Maison",
-            url: "https://belmaison.sanderc.net",
-            linkLabel: "belmaison.sanderc.net",
-            description: "Un tableau de bord d'intégrations interne au service de la plateforme immobilière Bel'Maison.",
-            tags: ["Immobilier", "Intégrations", "Tableau de bord", "BackOffice"],
         },
     ],
 };
