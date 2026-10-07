@@ -48,14 +48,14 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "A French real estate search portal: browse listings on a map or in a list, request a free valuation and get in touch, in French, Dutch and English.",
-            tags: ["Real Estate", "Map search", "SEO", "Multilingual", "Emails", "Statistics"],
+            tags: ["Map search", "SEO", "Multilingual", "Emails", "Statistics"],
         },
         {
             name: "Bel'Maison Integrations",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "An internal integrations dashboard supporting the Bel'Maison real estate platform.",
-            tags: ["Real Estate", "Data Processing", "Statistics", "Dashboard", "BackOffice"],
+            tags: ["Data Processing", "Statistics", "Dashboard", "BackOffice"],
         },
         {
             name: "CITRadio DJ Platform",
@@ -105,14 +105,14 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Een Frans vastgoedzoekportaal: bekijk panden op de kaart of in een lijst, vraag een gratis schatting aan en neem contact op, in het Frans, Nederlands en Engels.",
-            tags: ["Vastgoed", "Zoeken op kaart", "SEO", "Meertalig", "Mails", "Statistieken"],
+            tags: ["Zoeken op kaart", "SEO", "Meertalig", "Mails", "Statistieken"],
         },
         {
             name: "Bel'Maison Integraties",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "Een intern integratiedashboard ter ondersteuning van het Bel'Maison vastgoedplatform.",
-            tags: ["Vastgoed", "Gegevensverwerking", "Statistieken", "Dashboard", "BackOffice"],
+            tags: ["Gegevensverwerking", "Statistieken", "Dashboard", "BackOffice"],
         },
         {
             name: "CITRadio DJ-platform",
@@ -161,14 +161,14 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Un portail de recherche immobilière : consultez les biens sur une carte ou en liste, demandez une estimation gratuite et contactez l'agence, en français, néerlandais et anglais.",
-            tags: ["Immobilier", "Recherche sur carte", "SEO", "Multilingue", "E-mails", "Statistiques"],
+            tags: ["Recherche sur carte", "SEO", "Multilingue", "E-mails", "Statistiques"],
         },
         {
             name: "Intégrations Bel'Maison",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "Un tableau de bord d'intégrations interne au service de la plateforme immobilière Bel'Maison.",
-            tags: ["Immobilier", "Traitement des données", "Statistiques", "Tableau de bord", "BackOffice"],
+            tags: ["Traitement des données", "Statistiques", "Tableau de bord", "BackOffice"],
         },
         {
             name: "Plateforme DJ CITRadio",
