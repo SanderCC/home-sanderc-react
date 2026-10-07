@@ -55,7 +55,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "supportersclub.net",
             description:
                 "A platform to find and join a supporters club, get tickets and share events with all members.",
-            tags: ["Ticketing", "Community"],
+            tags: ["Ticketing", "Ticket sales", "Community"],
         },
         {
             name: "KBFKB",
@@ -111,7 +111,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "supportersclub.net",
             description:
                 "Een platform om een supportersclub te vinden en lid te worden, tickets te bestellen en evenementen met alle leden te delen.",
-            tags: ["Ticketing", "Community"],
+            tags: ["Ticketing", "Ticketverkoop", "Community"],
         },
         {
             name: "KBFKB",
@@ -168,7 +168,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "supportersclub.net",
             description:
                 "Une plateforme pour trouver et rejoindre un club de supporters, obtenir des billets et partager des événements avec tous les membres.",
-            tags: ["Billetterie", "Communauté"],
+            tags: ["Billetterie", "Vente de billets", "Communauté"],
         },
         {
             name: "KBFKB",
