@@ -16,14 +16,14 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "dj.citradio.net",
             description:
                 "A platform built for CITRadio, giving DJs the tools they need to manage their shows and schedule.",
-            tags: ["Radio", "Scheduling", "Team management"],
+            tags: ["Radio", "Scheduling", "Team management", "Monitoring"],
         },
         {
             name: "Bel'Maison Integrations",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "An internal integrations dashboard supporting the Bel'Maison real estate platform.",
-            tags: ["Real Estate", "Integrations", "Dashboard"],
+            tags: ["Real Estate", "Integrations", "Dashboard", "BackOffice"],
         },
         {
             name: "Bel'Maison",
@@ -72,14 +72,14 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://dj.citradio.net",
             linkLabel: "dj.citradio.net",
             description: "Een platform gebouwd voor CITRadio, dat dj's de tools geeft om hun shows en planning te beheren.",
-            tags: ["Radio", "Planning", "Teambeheer"],
+            tags: ["Radio", "Planning", "Teambeheer", "Monitoring"],
         },
         {
             name: "Bel'Maison Integraties",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "Een intern integratiedashboard ter ondersteuning van het Bel'Maison vastgoedplatform.",
-            tags: ["Vastgoed", "Integraties", "Dashboard"],
+            tags: ["Vastgoed", "Integraties", "Dashboard", "BackOffice"],
         },
         {
             name: "Bel'Maison",
@@ -129,14 +129,14 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "dj.citradio.net",
             description:
                 "Une plateforme conçue pour CITRadio, donnant aux DJ les outils nécessaires pour gérer leurs émissions et leur planning.",
-            tags: ["Radio", "Planification", "Gestion d'équipe"],
+            tags: ["Radio", "Planification", "Gestion d'équipe", "Suivi"],
         },
         {
             name: "Intégrations Bel'Maison",
             url: "https://belmaison.sanderc.net",
             linkLabel: "belmaison.sanderc.net",
             description: "Un tableau de bord d'intégrations interne au service de la plateforme immobilière Bel'Maison.",
-            tags: ["Immobilier", "Intégrations", "Tableau de bord"],
+            tags: ["Immobilier", "Intégrations", "Tableau de bord", "BackOffice"],
         },
         {
             name: "Bel'Maison",
