@@ -48,7 +48,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "A French real estate search portal: browse listings on a map or in a list, request a free valuation and get in touch, in French, Dutch and English.",
-            tags: ["Map search", "SEO", "Multilingual", "Emails", "Statistics"],
+            tags: ["Map search", "SEO", "Emails", "Statistics"],
         },
         {
             name: "Bel'Maison Integrations",
@@ -105,7 +105,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Een Frans vastgoedzoekportaal: bekijk panden op de kaart of in een lijst, vraag een gratis schatting aan en neem contact op, in het Frans, Nederlands en Engels.",
-            tags: ["Zoeken op kaart", "SEO", "Meertalig", "Mails", "Statistieken"],
+            tags: ["Zoeken op kaart", "SEO", "Mails", "Statistieken"],
         },
         {
             name: "Bel'Maison Integraties",
@@ -161,7 +161,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "belmaison-seo.sanderc.net",
             description:
                 "Un portail de recherche immobilière : consultez les biens sur une carte ou en liste, demandez une estimation gratuite et contactez l'agence, en français, néerlandais et anglais.",
-            tags: ["Recherche sur carte", "SEO", "Multilingue", "E-mails", "Statistiques"],
+            tags: ["Recherche sur carte", "SEO", "E-mails", "Statistiques"],
         },
         {
             name: "Intégrations Bel'Maison",
