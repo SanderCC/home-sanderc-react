@@ -47,8 +47,8 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://belmaison-seo.sanderc.net/en",
             linkLabel: "belmaison-seo.sanderc.net",
             description:
-                "A French real estate platform for buying and selling residential and commercial property with confidence.",
-            tags: ["Real Estate", "Website", "SEO", "Emails", "Statistics"],
+                "A French real estate search portal: browse listings on a map or in a list, request a free valuation and get in touch, in French, Dutch and English.",
+            tags: ["Real Estate", "Map search", "SEO", "Multilingual", "Emails", "Statistics"],
         },
         {
             name: "Bel'Maison Integrations",
@@ -104,8 +104,8 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://belmaison-seo.sanderc.net/en",
             linkLabel: "belmaison-seo.sanderc.net",
             description:
-                "Een Frans vastgoedplatform om met vertrouwen woningen en commercieel vastgoed te kopen en verkopen.",
-            tags: ["Vastgoed", "Website", "SEO", "Mails", "Statistieken"],
+                "Een Frans vastgoedzoekportaal: bekijk panden op de kaart of in een lijst, vraag een gratis schatting aan en neem contact op, in het Frans, Nederlands en Engels.",
+            tags: ["Vastgoed", "Zoeken op kaart", "SEO", "Meertalig", "Mails", "Statistieken"],
         },
         {
             name: "Bel'Maison Integraties",
@@ -160,8 +160,8 @@ export const projects: Record<Lang, Project[]> = {
             url: "https://belmaison-seo.sanderc.net/en",
             linkLabel: "belmaison-seo.sanderc.net",
             description:
-                "Une plateforme immobilière française pour acheter et vendre en toute confiance biens résidentiels et commerciaux.",
-            tags: ["Immobilier", "Site web", "SEO", "E-mails", "Statistiques"],
+                "Un portail de recherche immobilière : consultez les biens sur une carte ou en liste, demandez une estimation gratuite et contactez l'agence, en français, néerlandais et anglais.",
+            tags: ["Immobilier", "Recherche sur carte", "SEO", "Multilingue", "E-mails", "Statistiques"],
         },
         {
             name: "Intégrations Bel'Maison",
