@@ -3,8 +3,8 @@
   "name": "Sander Constantin — Software Engineer",
   "icons": [
     {
-      "src": "https://avatars.githubusercontent.com/u/58855319?v=4",
-      "sizes": "192x192 512x512",
+      "src": "/icon.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],

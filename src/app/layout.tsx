@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
         "Sander Constantin — Software Engineer in Belgium. Experience, education, skills and a portfolio of personal projects.",
     icons: {
-        icon: "/sander.png",
+        icon: "/icon.png",
     },
     manifest: "/manifest.json",
     openGraph: {
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
         title: "Sander Constantin — Software Engineer",
         description:
             "Sander Constantin — Software Engineer in Belgium. Experience, education, skills and a portfolio of personal projects.",
-        images: ["https://avatars.githubusercontent.com/u/58855319?v=4"],
+        images: ["/og.jpg"],
     },
     twitter: {
         card: "summary",
         title: "Sander Constantin — Software Engineer",
         description: "Software Engineer in Belgium. Experience, education, skills and a portfolio of personal projects.",
-        images: ["https://avatars.githubusercontent.com/u/58855319?v=4"],
+        images: ["/og.jpg"],
     },
 };
 
