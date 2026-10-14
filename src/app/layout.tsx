@@ -5,7 +5,7 @@ import "@/css/theme.css";
 import { ThemeProvider } from "@/theme/ThemeContext";
 import { LanguageProvider } from "@/i18n";
 import Layout from "@/components/Layout";
-import NewRelic from "@/components/NewRelic";
+import Traces from "@/components/Traces";
 
 export const viewport: Viewport = {
     width: "device-width",
@@ -59,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <Layout>{children}</Layout>
                     </LanguageProvider>
                 </ThemeProvider>
-                <NewRelic />
+                <Traces />
                 <Script
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=G-GME7FWE6QL"
