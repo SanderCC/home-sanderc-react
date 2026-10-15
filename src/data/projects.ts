@@ -16,7 +16,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "traces.sanderc.net",
             description:
                 "Our own observability platform for our projects: OpenTelemetry ingest, traces, errors, logs, browser monitoring, infrastructure metrics and dashboards.",
-            tags: ["Observability", "OpenTelemetry", "Dashboards", ".NET", "PWA"],
+            tags: ["Observability", "Monitoring", "OpenTelemetry", "Dashboards", ".NET", "PWA"],
         },
         {
             name: "KBFKB",
@@ -81,7 +81,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "traces.sanderc.net",
             description:
                 "Ons eigen observability-platform voor onze projecten: OpenTelemetry-ingest, traces, fouten, logs, browsermonitoring, infrastructuurmetrics en dashboards.",
-            tags: ["Observability", "OpenTelemetry", "Dashboards", ".NET", "PWA"],
+            tags: ["Observability", "Monitoring", "OpenTelemetry", "Dashboards", ".NET", "PWA"],
         },
         {
             name: "KBFKB",
@@ -145,7 +145,7 @@ export const projects: Record<Lang, Project[]> = {
             linkLabel: "traces.sanderc.net",
             description:
                 "Notre propre plateforme d'observabilité pour nos projets : ingestion OpenTelemetry, traces, erreurs, logs, suivi navigateur, métriques d'infrastructure et tableaux de bord.",
-            tags: ["Observabilité", "OpenTelemetry", "Tableaux de bord", ".NET", "PWA"],
+            tags: ["Observabilité", "Suivi", "OpenTelemetry", "Tableaux de bord", ".NET", "PWA"],
         },
         {
             name: "KBFKB",
